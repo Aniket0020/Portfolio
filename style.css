@@ -2,8 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Arial, Helvetica, sans-serif;
-
+    font-family: 'Times New Roman', Times, serif
 }
 
 html {
@@ -68,9 +67,10 @@ ul {
 /* section */
 
 section {
-    height: 500vh;
+    height: 460vh;
     width: 100%;
     background-image: linear-gradient(to right, black, rgb(8, 8, 69));
+    margin: 0px;
 
 
 
@@ -138,7 +138,7 @@ section {
     font-size: 1.1rem;
     width: 80%;
     margin: auto;
-    margin-top: 50px;
+    margin: 50px;
 }
 
 .review {
@@ -284,6 +284,19 @@ section {
 
 
 /* form */
+
+.container_2 {
+    height: 60vh;
+    width: 80%;
+    /* background-color: antiquewhite; */
+    margin: auto;
+    display: block;
+    margin-top: 60px;
+    margin-bottom: 50px;
+    padding: 50px;
+    color: white;
+}
+
 .C-form {
     width: 60%;
     margin: auto;
@@ -336,12 +349,13 @@ section {
 .success-message {
 
     width: 150px;
-    background-color: #040238;
+    /* background-color: #040238; */
     height: 100px;
     margin: auto;
     display: flex;
     justify-content: center;
     align-items: center;
+    text-align: center;
 }
 
 .success-message i,
@@ -349,5 +363,203 @@ h2 {
     text-align: center;
     padding: 5px;
     font-size: 30px;
+
+}
+
+/* footer */
+
+footer {
+    height: 40px;
+    background-color: black;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+footer h3 {
+    font-size: 0.9rem;
+    font-weight: 700;
+    color: white;
+
+}
+
+
+/* Rexponsive */
+
+@media screen and (max-width: 1024px) {
+
+    .main {
+        height: 600px;
+        width: 80%;
+        /* background-color: antiquewhite; */
+        padding: 0;
+        display: block;
+        color: white;
+
+
+    }
+
+    .box {
+        height: 400px;
+        /* background-color: red; */
+        width: 100%;
+        margin: auto;
+        margin-top: 50px;
+        display: flex;
+        align-items: center;
+
+    }
+
+    .image img {
+        height: 280px;
+        width: 400px;
+        border-radius: 30px;
+    }
+
+    #about {
+        padding-top: 100px;
+    }
+
+    #project {
+        padding-top: 100px;
+
+    }
+
+    .heading {
+        font-size: 2.5rem;
+    }
+
+
+
+    .edu-box2 {
+        width: 100%;
+        height: 400px;
+
+        display: flex;
+        flex-wrap: wrap;
+        /* border: 1px solid red; */
+        justify-content: space-around;
+    }
+
+    .lvl h3 {
+        width: 170px;
+        font-size: 0.9rem;
+        padding: 2px;
+    }
+
+    section {
+        height: 510vh;
+    }
+
+    .container_2 {
+        height: 90vh;
+        padding-top: 50px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+
+    .main {
+        height: 450px;
+    }
+
+    .content h1 {
+        font-size: 2rem;
+
+
+    }
+
+    .content p {
+        font-size: 1rem;
+        text-align: justify;
+    }
+
+    .content {
+        padding: 20px;
+        height: 280px;
+    }
+
+    .image img {
+        height: 180px;
+        width: 250px;
+
+    }
+
+    .C-form {
+        width: 90%;
+    }
+
+    section {
+        height: 430vh;
+    }
+
+}
+
+@media screen and (max-width: 426px) {
+    nav {
+        justify-content: center;
+    }
+
+    .logo {
+        display: none;
+    }
+
+    .medias {
+        display: none;
+    }
+
+    .box {
+        padding: 0;
+        margin: 0;
+    }
+
+    .image {
+        display: none;
+    }
+
+    .content {
+        padding-top: 80px;
+    }
+
+    .main {
+        height: 480px;
+    }
+
+    .review {
+        margin: auto;
+    }
+
+    .edu-box2 {
+        display: block;
+        height: 800px;
+    }
+
+    .lvl {
+        display: block;
+    }
+
+    #project {
+        height: 1300px;
+    }
+
+    section {
+        height: 580vh;
+    }
+
+    .C-form {
+        width: 280px;
+        margin: auto;
+        padding: 0;
+    }
+
+    .container_2 {
+        padding: 50px 0px;
+    }
+
+
+
 
 }

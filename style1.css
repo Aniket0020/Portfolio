@@ -1,0 +1,276 @@
+/* Root Level and Global Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* Variables for consistency */
+:root {
+    --primary-bg: linear-gradient(to right, black, rgb(8, 8, 69));
+    --highlight-color: #c4f000;
+    --font-color-light: gainsboro;
+}
+
+/* Navigation */
+nav {
+    height: 70px;
+    width: 100%;
+    background: var(--primary-bg);
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    position: fixed;
+    top: 0;
+}
+
+.options {
+    display: flex;
+    gap: 50px;
+    list-style-type: none;
+}
+
+.options a {
+    text-decoration: none;
+    color: white;
+}
+
+.logo {
+    height: 60px;
+    width: 60px;
+    background: url(/Port/logo/2.png) no-repeat center/contain;
+}
+
+.day i {
+    color: white;
+}
+
+ul {
+    display: flex;
+    gap: 20px;
+    list-style-type: none;
+}
+
+/* Section Styling */
+section {
+    width: 100%;
+    background: var(--primary-bg);
+}
+
+.main {
+    width: 80%;
+    margin: 60px auto 50px;
+    padding-top: 100px;
+    color: white;
+}
+
+.box {
+    display: flex;
+    align-items: center;
+    padding-top: 100px;
+}
+
+.image img {
+    height: 350px;
+    width: 500px;
+    border-radius: 30px;
+}
+
+.content h1 {
+    font-size: 3rem;
+    color: white;
+}
+
+.content p {
+    padding-top: 20px;
+    font-size: 1.2rem;
+    color: var(--font-color-light);
+}
+
+/* About Section */
+.heading {
+    font-size: 3.5rem;
+    padding-left: 50px;
+}
+
+.details p {
+    font-size: 1.1rem;
+    width: 80%;
+    margin: 50px auto 0;
+}
+
+.review {
+    margin: 150px auto 0;
+    width: 80%;
+    display: flex;
+    justify-content: space-around;
+    font-size: 1.1rem;
+}
+
+.review strong {
+    font-size: 3rem;
+}
+
+/* Contact Section */
+.container {
+    width: 80%;
+    margin: 60px auto 50px;
+    padding-top: 100px;
+    color: white;
+}
+
+.info {
+    height: 400px;
+}
+
+/* Projects */
+.edu-box2 {
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.lvl {
+    text-align: center;
+    width: 23%;
+    margin-top: 30px;
+}
+
+.lvl h3 {
+    margin: 15px 0 10px;
+    border: 1px solid white;
+    padding: 2px;
+    width: 250px;
+}
+
+.lvl ul {
+    line-height: 1.7;
+    margin: 10px 0;
+    list-style-type: circle;
+}
+
+.lvl a {
+    color: white;
+    text-decoration: underline;
+}
+
+.lvl a:hover {
+    color: yellow;
+}
+
+/* Contact Form */
+.container_2 {
+    width: 80%;
+    margin: 60px auto 50px;
+    padding-top: 100px;
+    color: white;
+}
+
+.C-form {
+    width: 60%;
+    margin: auto;
+    padding: 30px;
+}
+
+.C-form input,
+.C-form textarea {
+    width: 100%;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 15px 0;
+}
+
+.C-form textarea {
+    resize: none;
+}
+
+.last-btn {
+    width: 100%;
+    text-align: center;
+    padding: 5px;
+}
+
+.btn {
+    padding: 10px 30px;
+    background-color: var(--highlight-color);
+    border-radius: 20px;
+}
+
+.success-message {
+    width: 150px;
+    background-color: #040238;
+    height: 100px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 30px;
+    color: var(--highlight-color);
+}
+
+/* Footer */
+footer {
+    height: 40px;
+    background-color: black;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+footer h3 {
+    font-size: 0.9rem;
+    font-weight: 700;
+    color: white;
+}
+
+/* Responsive */
+@media screen and (max-width: 1024px) {
+    .main {
+        width: 100%;
+        padding: 0;
+    }
+
+    .image img {
+        height: 280px;
+        width: 400px;
+    }
+
+    .heading {
+        font-size: 2.5rem;
+    }
+
+    .edu-box2,
+    .edu-box2 .lvl {
+        width: 100%;
+        justify-content: space-around;
+    }
+
+    .container_2 {
+        height: 90vh;
+        padding-top: 50px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .options {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .heading {
+        font-size: 2rem;
+    }
+
+    .lvl h3 {
+        width: 150px;
+        font-size: 0.8rem;
+    }
+}
